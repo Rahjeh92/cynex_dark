@@ -1,436 +1,215 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CYNEX — Automation & Security</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landio Ultra — نسخة تعليمية مستوحاة</title>
+  <meta name="description" content="نسخة تعليمية مستوحاة من Landio بنفس روح التأثيرات دون نسخ المحتوى/الأصول.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+<body>
+  <!-- Scroll progress -->
+  <div id="progress"></div>
 
-<body class="dark">
-  <header class="site-header" id="top">
-    <div class="container nav">
-      <a class="brand" href="#top" aria-label="CYNEX Home">
-        <img class="logo" src="assets/logo-cynex.jpg" alt="CYNEX logo" />
-        <span class="brand-name">CYNEX</span>
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="top" data-reveal="fade-down">
+    <div class="container nav-inner">
+      <a class="brand" href="#hero" aria-label="الرئيسية">
+        <svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="var(--c1)" />
+              <stop offset="1" stop-color="var(--c2)" />
+            </linearGradient>
+          </defs>
+          <rect x="4" y="4" width="40" height="40" rx="10" fill="url(#g1)"/>
+          <path d="M14 30l7-12 6 7 3-5 4 10" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Landio<span class="dot">•</span>Ultra</span>
       </a>
-      <nav class="menu" id="primary-menu">
-        <a href="#services">Services</a>
-        <a href="#features">Features</a>
-        <a href="#process">Process</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact">Contact</a>
+      <button class="mobile-toggle" aria-label="القائمة">☰</button>
+      <nav class="links">
+        <a href="#features">المميزات</a>
+        <a href="#showcase">العرض</a>
+        <a href="#stats">الأرقام</a>
+        <a href="#pricing">الأسعار</a>
+        <a href="#faq">الأسئلة</a>
+        <button class="btn sm theme-switch" aria-label="تبديل الثيم">🌓</button>
+        <a href="#cta" class="btn sm primary magnetic">جرّبه الآن</a>
       </nav>
-      <button class="mobile-toggle" aria-label="Open menu" aria-controls="primary-menu" aria-expanded="false">☰</button>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <img class="hero-badge" src="assets/logo-cynex.jpg" alt="CYNEX" />
-        <h1 class="hero-title">
-          <span>Automate Smarter.</span>
-          <span>Grow Faster.</span>
-          <em>With AI.</em>
-        </h1>
-        <p class="hero-sub">AI Automation for Modern Businesses Made Simple</p>
-        <a class="btn primary lg" href="#cta">Book A Free Call</a>
-        <div class="socials">
-          <a href="#" aria-label="X">X</a>
-          <a href="#" aria-label="Instagram">IG</a>
-          <a href="#" aria-label="Facebook">FB</a>
+  <!-- ========== HERO ========== -->
+  <section id="hero" class="hero">
+    <div class="aurora"></div>
+    <div class="grid-bg"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1 class="title gradient" data-reveal="fade-up">أطلق منتجك بلمسة سينمائية</h1>
+        <p class="sub" data-reveal="fade-up" data-delay="100">
+          تأثيرات تمرير حريرية، أزرار مغناطيسية، طبقات بارالاكس، ورسوم كليب-باث ديناميكية — بدون مكتبات.
+        </p>
+        <div class="hero-actions" data-reveal="fade-up" data-delay="200">
+          <a href="#pricing" class="btn lg primary magnetic">ابدأ مجاناً</a>
+          <a href="#features" class="btn lg ghost">اكتشف المزيد</a>
         </div>
       </div>
-      <div class="hero-stars" aria-hidden="true"></div>
-    </section>
-
-    <section class="why">
-      <div class="container slim">
-        <div class="pill">WE ANALYZE YOUR DATA</div>
-        <h2 class="mix-title">
-          We find what to <em>automate</em>, who your users are &amp; how AI can optimize your <em>workflow</em>. Best
-          part is we also build and launch <em>real solutions.</em>
-        </h2>
-        <div class="avatar-note">Co‑founder &amp; AI Strategy Lead</div>
-      </div>
-    </section>
-
-    <section class="benefits">
-      <div class="container">
-        <h3 class="eyebrow">BENEFITS</h3>
-        <h2>Why Choose <em>Us?</em></h2>
-        <div class="cards cards3">
-          <article class="card">
-            <h4>Real‑Time Intelligence</h4>
-            <p>Access accurate, real‑time data to drive smarter decisions.</p>
-          </article>
-          <article class="card">
-            <h4>Measurable Impact</h4>
-            <p>Track performance, uncover insights, and achieve data‑backed growth.</p>
-          </article>
-          <article class="card">
-            <h4>Seamless Integration</h4>
-            <p>Connect tools, teams, and workflows with intelligent automation.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="services" id="services">
-      <div class="container">
-        <h3 class="eyebrow">SERVICES</h3>
-        <h2>Smarter Services, <em>Built with AI</em></h2>
-        <div class="cards cards2">
-          <article class="card service">
-            <h4>Automate repetitive tasks</h4>
-            <p>We help streamline internal operations by automating manual workflows.</p>
-          </article>
-          <article class="card service">
-            <h4>Automated Workflows</h4>
-            <p>Build intelligent multi‑step processes across tools and platforms.</p>
-          </article>
-          <article class="card service">
-            <h4>Real‑Time Intelligence</h4>
-            <p>Make smarter decisions with live data insights.</p>
-          </article>
-          <article class="card service">
-            <h4>Custom AI Agent Development</h4>
-            <p>We develop agents that integrate seamlessly with your tools.</p>
-          </article>
-          <article class="card service">
-            <h4>AI Strategy Consulting</h4>
-            <p>Get expert guidance to implement AI solutions that drive growth.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="features" id="features">
-      <div class="container">
-        <h3 class="eyebrow">FEATURES</h3>
-        <h2>All features in <em>one place</em></h2>
-        <div class="cards cards3">
-          <article class="card">
-            <h4>Workflow Automation</h4>
-            <p>Automate complex processes to boost speed and clarity.</p>
-          </article>
-          <article class="card">
-            <h4>Custom AI Solutions</h4>
-            <p>Build systems aligned with your goals and challenges.</p>
-          </article>
-          <article class="card">
-            <h4>AI Assistant</h4>
-            <p>Deploy intelligent virtual agents to streamline tasks.</p>
-          </article>
-          <article class="card">
-            <h4>Sales &amp; Marketing</h4>
-            <p>Optimize campaigns, track leads, personalize outreach.</p>
-          </article>
-          <article class="card">
-            <h4>Performance Tracking</h4>
-            <p>Track results in real time to improve &amp; scale.</p>
-          </article>
-          <article class="card">
-            <h4>Seamless Integrations</h4>
-            <p>Connect your tools and apps for unified workflows.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="process" id="process">
-      <div class="container">
-        <h3 class="eyebrow">PROCESS</h3>
-        <h2>Our Simple &amp; <em>Smart</em> Process</h2>
-        <div class="steps">
-          <div class="step">
-            <div class="num">01</div>
-            <h4>Discover &amp; Plan</h4>
-            <p>Analyze goals, data, tools → identify high‑ROI automations.</p>
-          </div>
-          <div class="step">
-            <div class="num">02</div>
-            <h4>Design &amp; Implement</h4>
-            <p>Create tailored workflows and integrate into operations.</p>
-          </div>
-          <div class="step">
-            <div class="num">03</div>
-            <h4>Measure &amp; Scale</h4>
-            <p>Track KPIs, optimize performance, scale across teams.</p>
+      <div class="hero-media" data-reveal="scale-in" data-delay="200">
+        <div class="shell">
+          <div class="statusbar"><span></span><span></span><span></span></div>
+          <div class="canvas">
+            <div class="row shimmer"></div>
+            <div class="row"></div><div class="row"></div>
+            <div class="row"></div><div class="row"></div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <a class="scroll-hint" href="#features" aria-label="مرر للأسفل">⌄</a>
+    <div class="shape-clip" aria-hidden="true"></div>
+  </section>
 
-    <section class="clients" id="clients">
-      <div class="container slim">
-        <h3 class="eyebrow">OUR CLIENTS</h3>
-        <h2>Success Stories to <em>Inspire</em></h2>
-        <div class="story card">
-          <div class="story-text">
-            <h4>Sophia's Retail Breakthrough</h4>
-            <p>Marketing lead at Trendify used analytics to increase engagement 40% and profits 50%.</p>
-          </div>
-          <div class="story-media">
-            <div class="ph"></div>
-          </div>
-        </div>
+  <!-- ========== FEATURES ========== -->
+  <section id="features" class="section">
+    <div class="container">
+      <header class="section-head" data-reveal="fade-up">
+        <h2>تأثيرات قريبة من Framer Landio</h2>
+        <p>نفس الإحساس البصري لكن بكود أصلي: كشف عند التمرير، بارالاكس، إمالة ثلاثية، ومغنطة الأزرار.</p>
+      </header>
+      <div class="grid cards">
+        <article class="card tilt" data-reveal="slide-right">
+          <h3>Reveal Variants</h3>
+          <p>fade-up / fade-down / slide-left / slide-right / scale-in عبر IntersectionObserver.</p>
+        </article>
+        <article class="card tilt" data-reveal="slide-right" data-delay="100">
+          <h3>Parallax Layers</h3>
+          <p>تحريك عناصر الخلفية والـ aurora لخلق عمق جذاب سلس.</p>
+        </article>
+        <article class="card tilt" data-reveal="slide-right" data-delay="200">
+          <h3>Magnetic Buttons</h3>
+          <p>تتبّع المؤشر داخل الزر لإحساس “يمتصّ” الكيرسر ويزيد التفاعل.</p>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="integrations" id="integrations">
-      <div class="container slim">
-        <h3 class="eyebrow">INTEGRATIONS</h3>
-        <h2>Seamless <em>Integrations</em></h2>
-        <div class="icon-grid">
-          <div class="ico ph"></div>
-          <div class="ico ph"></div>
-          <div class="ico ph"></div>
-          <div class="ico ph"></div>
-          <div class="ico ph"></div>
-          <div class="ico ph"></div>
-          <div class="ico ph"></div>
-          <div class="ico ph"></div>
-          <div class="ico ph"></div>
-          <div class="ico ph"></div>
-          <div class="ico ph"></div>
-          <div class="ico ph"></div>
-          <div class="ico ph"></div>
-          <div class="ico ph"></div>
-          <div class="ico ph"></div>
-        </div>
+  <!-- ========== SHOWCASE (parallax tiles) ========== -->
+  <section id="showcase" class="section alt">
+    <div class="container">
+      <header class="section-head" data-reveal="fade-up">
+        <h2>عرض حي</h2>
+        <p>بطاقات كبيرة تتحرك بشكل طفيف عند التمرير (Scroll/Parallax) لتعكس سلاسة التصميم.</p>
+      </header>
+      <div class="tiles">
+        <div class="tile" data-depth="0.15" data-reveal="fade-up"></div>
+        <div class="tile" data-depth="0.25" data-reveal="fade-up" data-delay="100"></div>
+        <div class="tile" data-depth="0.35" data-reveal="fade-up" data-delay="200"></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="reviews" id="reviews">
-      <div class="container">
-        <h3 class="eyebrow">REVIEWS</h3>
-        <h2>Trusted by <em>Visionaries</em></h2>
-        <div class="cards cards3">
-          <article class="quote card">
-            <p>“Truly impressive. The AI assistant is fast and accurate.”</p>
-            <div class="author">Daniel Kim — Operations Lead</div>
-          </article>
-          <article class="quote card">
-            <p>“Game‑changer. Our team now focuses on what matters.”</p>
-            <div class="author">Priya Mehra — CTO</div>
-          </article>
-          <article class="quote card">
-            <p>“No fluff, just performance. Processes feel under control.”</p>
-            <div class="author">Ravi Shah — COO</div>
-          </article>
-        </div>
+  <!-- ========== STATS ========== -->
+  <section id="stats" class="section">
+    <div class="container">
+      <div class="stats" data-reveal="fade-up">
+        <div class="stat"><span class="num" data-count="99">0</span><span class="unit">%</span><p>رضا</p></div>
+        <div class="stat"><span class="num" data-count="420">0</span><span class="unit">ms</span><p>سرعة</p></div>
+        <div class="stat"><span class="num" data-count="1800">0</span><span class="unit">+</span><p>تطبيقات</p></div>
+        <div class="stat"><span class="num" data-count="24">0</span><span class="unit">/7</span><p>جاهزية</p></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="pricing" id="pricing">
-      <div class="container">
-        <h3 class="eyebrow">PRICING</h3>
-        <h2>Flexible Plans for <em>Everyone</em></h2>
-        <div class="switcher">
-          <button class="btn ghost small" data-plan="monthly">Monthly</button>
-          <button class="btn ghost small" data-plan="yearly">Yearly</button>
-          <span class="save">Save 20%</span>
-        </div>
-        <div class="price-grid">
-          <div class="price-card">
-            <h4>Starter</h4>
-            <div class="price"><span class="currency">$</span>50<span class="per">/month</span></div>
-            <ul>
-              <li>3 Automated Workflows</li>
-              <li>Basic AI Assistant Access</li>
-              <li>Email + Slack Integration</li>
-              <li>Monthly Performance Reports</li>
-              <li>Email Support</li>
-            </ul>
-            <a class="btn primary" href="#cta">Get Started</a>
-          </div>
-          <div class="price-card popular">
-            <div class="badge">Popular</div>
-            <h4>Pro</h4>
-            <div class="price"><span class="currency">$</span>90<span class="per">/month</span></div>
-            <ul>
-              <li>10+ Automated Workflows</li>
-              <li>Advanced AI Assistant Features</li>
-              <li>Bi‑Weekly Strategy Reviews</li>
-              <li>CRM + Marketing Tool Integrations</li>
-              <li>Priority Support</li>
-            </ul>
-            <a class="btn primary" href="#cta">Get Started</a>
-          </div>
-          <div class="price-card">
-            <h4>Enterprise</h4>
-            <div class="price custom">Custom</div>
-            <ul>
-              <li>Unlimited Custom Workflows</li>
-              <li>Dedicated AI Strategist</li>
-              <li>API &amp; Private Integrations</li>
-              <li>Real‑Time Dashboards</li>
-              <li>24/7 Premium Support + SLA</li>
-            </ul>
-            <a class="btn primary" href="#cta">Get Started</a>
-          </div>
-        </div>
-        <div class="note">We donate 2% of your membership to pediatric wellbeing</div>
-      </div>
-    </section>
-
-    <section class="faq" id="faq">
-      <div class="container">
-        <h3 class="eyebrow">FAQ’S</h3>
-        <h2>Frequently Asked <em>Questions</em></h2>
-        <div class="faq-grid">
-          <div class="faq-cta card">
-            <h4>Still Have Questions?</h4>
-            <p>Feel free to get in touch with us today!</p>
-            <a class="btn ghost" href="#contact">Ask A Question</a>
-          </div>
-          <div class="accordions">
-            <details open>
-              <summary>What types of processes can you automate?</summary>
-              <p>We automate workflows across operations, marketing, sales, and support.</p>
-            </details>
-            <details>
-              <summary>Do I need technical knowledge to use your service?</summary>
-              <p>No — we design simple, guided experiences.</p>
-            </details>
-            <details>
-              <summary>Can you integrate with our existing tools?</summary>
-              <p>Yes, with common CRMs/ERPs/helpdesks and custom APIs.</p>
-            </details>
-            <details>
-              <summary>How long does implementation take?</summary>
-              <p>Typically 2–6 weeks depending on scope.</p>
-            </details>
-            <details>
-              <summary>Is your AI secure and compliant?</summary>
-              <p>We follow best practices and adapt to your compliance needs.</p>
-            </details>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="comparison" id="comparison">
-      <div class="container">
-        <h3 class="eyebrow">COMPARISON</h3>
-        <h2>Why Choose Us <em>Over Others</em></h2>
-        <div class="compare-grid">
-          <div class="card">
-            <h4>Cynex</h4>
-            <ul>
-              <li>Fast setup with ready AI workflows</li>
-              <li>Built to grow and adapt with you</li>
-              <li>Real‑time, AI‑powered analytics</li>
-              <li>Automates tasks, reducing overhead</li>
-              <li>Expert support + AI guidance</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h4>Others</h4>
-            <ul class="neg">
-              <li>Slower execution and manual setup</li>
-              <li>Requires manual updates as you scale</li>
-              <li>Limited or delayed reporting</li>
-              <li>Higher labor costs, less automation</li>
-              <li>Generic support or none at all</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="team" id="team">
-      <div class="container">
-        <h3 class="eyebrow">OUR AMAZING TEAM</h3>
-        <h2>Get to Know <em>Us</em></h2>
-        <div class="team-grid">
-          <article class="member card">
-            <div class="avatar ph"></div>
-            <h4>Ikta Sollork</h4>
-            <p>Founder / Data Analyst</p>
-          </article>
-          <article class="member card">
-            <div class="avatar ph"></div>
-            <h4>Gwen Chase</h4>
-            <p>AI Strategist</p>
-          </article>
-          <article class="member card">
-            <div class="avatar ph"></div>
-            <h4>James Bond</h4>
-            <p>Automation Engineer</p>
-          </article>
-          <article class="member card">
-            <div class="avatar ph"></div>
-            <h4>Jenny Will</h4>
-            <p>SEO / Others</p>
-          </article>
-          <article class="member card">
-            <div class="avatar ph"></div>
-            <h4>Jan Wink</h4>
-            <p>Integration Specialist</p>
-          </article>
-          <article class="member card">
-            <div class="avatar ph"></div>
-            <h4>Lilli Math</h4>
-            <p>Client Manager</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta" id="cta">
-      <div class="container slim cta-inner">
-        <p class="eyebrow">Reach out anytime</p>
-        <h2>Ready to Automate Smarter? <br />Let’s <em>Build Together</em></h2>
-        <p>Schedule a Call and Begin Automating</p>
-        <a class="btn primary" href="#contact">Book A Free Call</a>
-        <div class="socials">
-          <a href="#" aria-label="X">X</a>
-          <a href="#" aria-label="Instagram">IG</a>
-          <a href="#" aria-label="Facebook">FB</a>
-        </div>
-      </div>
-    </section>
-
-    <footer class="site-footer" id="contact">
-      <div class="container footer-grid">
-        <div class="f-brand">
-          <img src="assets/logo-cynex.jpg" class="logo small" alt="CYNEX" />
-          <p>About Us — CYNEX is a Kuwait-based technology company specializing in security, networking, and smart
-            automation solutions.</p>
-        </div>
-        <div>
-          <h4>Why Choose CYNEX</h4>
+  <!-- ========== PRICING ========== -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <header class="section-head" data-reveal="fade-up">
+        <h2>خطط واضحة</h2>
+        <p>مجاني لتجربة التأثيرات، وترقيات عند الحاجة.</p>
+      </header>
+      <div class="pricing">
+        <article class="price-card tilt" data-reveal="fade-up">
+          <h3>مجاني</h3>
+          <p class="price"><span>0</span>€</p>
           <ul>
-            <li>Professional, Kuwait-based team with hands-on expertise.</li>
-            <li>Reliable technology partnerships with leading global brands.</li>
-            <li>End-to-end project management: design → install → maintenance.</li>
+            <li>التأثيرات الأساسية</li>
+            <li>RTL/LTR</li>
+            <li>بدون مكتبات</li>
           </ul>
-        </div>
-        <div>
-          <h4>Contact</h4>
+          <a href="#cta" class="btn primary magnetic">جرّب</a>
+        </article>
+        <article class="price-card highlight tilt" data-reveal="fade-up" data-delay="120">
+          <h3>احترافي</h3>
+          <p class="price"><span>19</span>€</p>
           <ul>
-            <li>+965 50503025</li>
-            <li>info@cynex.pro</li>
-            <li>www.cynex.pro</li>
+            <li>تخصيص متقدم</li>
+            <li>تحسين أداء</li>
+            <li>مكوّنات إضافية</li>
           </ul>
-        </div>
+          <a href="#cta" class="btn primary magnetic">ابدأ</a>
+        </article>
+        <article class="price-card tilt" data-reveal="fade-up" data-delay="240">
+          <h3>مؤسسات</h3>
+          <p class="price"><span>99</span>€</p>
+          <ul>
+            <li>SLA</li>
+            <li>أولوية دعم</li>
+            <li>خصائص خاصة</li>
+          </ul>
+          <a href="#cta" class="btn ghost">تواصل</a>
+        </article>
       </div>
-      <div class="container footnote">
-        <div>© 2025 CYNEX</div>
-        <div class="madeby">Made by Framebase · <a href="mailto:info@cynex.pro">info@cynex.pro</a></div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section id="faq" class="section alt">
+    <div class="container">
+      <header class="section-head" data-reveal="fade-up">
+        <h2>أسئلة شائعة</h2>
+        <p>أجوبة سريعة قبل الإطلاق.</p>
+      </header>
+      <details class="faq" data-reveal="fade-up">
+        <summary>هل هذه نسخة طبق الأصل؟</summary>
+        <p>هي نسخة تعليمية “مستوحاة” بنفس روح التأثيرات دون نسخ التصميم/النصوص/الأصول الأصلية.</p>
+      </details>
+      <details class="faq" data-reveal="fade-up" data-delay="100">
+        <summary>هل يمكن تحويل الاتجاه إلى LTR؟</summary>
+        <p>نعم، بتغيير قيمة <code>dir</code> في &lt;html&gt;.</p>
+      </details>
+      <details class="faq" data-reveal="fade-up" data-delay="200">
+        <summary>هل أحتاج مكتبة أنيميشن؟</summary>
+        <p>لا، كل شيء Vanilla باستخدام واجهات المتصفح الحديثة.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section id="cta" class="section cta">
+    <div class="container">
+      <div class="cta-box" data-reveal="scale-in">
+        <h3>جاهز للتجربة؟</h3>
+        <p>انسخ القالب وابدأ اللعب بالتأثيرات فورًا.</p>
+        <a href="#top" class="btn lg primary magnetic">إلى الأعلى</a>
       </div>
-    </footer>
-  </main>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container foot-inner">
+      <p>© <span id="year"></span> Landio Ultra — نسخة تعليمية.</p>
+      <div class="foot-links">
+        <a href="#hero">الرئيسية</a>
+        <a href="#pricing">الأسعار</a>
+        <a href="#faq">الأسئلة</a>
+      </div>
+    </div>
+  </footer>
+
   <script src="js/main.js"></script>
 </body>
-
 </html>
